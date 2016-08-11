@@ -1,7 +1,4 @@
 /* @flow */
 
-import ArrowLeft from './arrow-left.svg'
-export { ArrowLeft }
-
-import ArrowRight from './arrow-right.svg'
-export { ArrowRight }
+export { default as ArrowLeft } from './arrow-left.svg'
+export { default as ArrowRight } from './arrow-right.svg'
