@@ -4,7 +4,7 @@ var webpack = require('webpack')
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
-    './src/index'
+    path.join(__dirname, 'src')
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -23,12 +23,6 @@ module.exports = {
       test: /\.svg$/,
       loaders: ['react-svgdom', 'svgo',],
     },],
-  },
-  resolve: {
-    modulesDirectories: ['node_modules', 'wip_modules',],
-    alias: {
-      'scrubs-components': '../'
-    }
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
