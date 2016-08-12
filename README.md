@@ -3,7 +3,7 @@
 ## Adding icons
 
 - Add your minimised icon to the `src` folder.
-- Add an named export declaration to `src/index.js`:
+- Add a named export declaration to `src/index.js`:
 ```javascript
 export { default as IconName } from './icon-name.svg'
 ```
